@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D4777C924EEC3DB0028C8FF /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4777C824EEC3DB0028C8FF /* UIImage+.swift */; };
 		7D95DBF424E0027B00C5BB52 /* rps_imageProcessed_flip_rotate.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7D95DBF324E0027B00C5BB52 /* rps_imageProcessed_flip_rotate.mlmodel */; };
 		C475655D248AEBD900F111B8 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C475655A248AEBD800F111B8 /* CameraView.swift */; };
 		C475655F248AEBD900F111B8 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C475655C248AEBD900F111B8 /* CameraViewController.swift */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		10C71E6B24C4D79300A8EE6A /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		131D672E55F74A60D83C1534 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7D4777C824EEC3DB0028C8FF /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
 		7D95DBF324E0027B00C5BB52 /* rps_imageProcessed_flip_rotate.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = rps_imageProcessed_flip_rotate.mlmodel; sourceTree = "<group>"; };
 		C475655A248AEBD800F111B8 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		C475655C248AEBD900F111B8 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				C4EB82EC248AEB7B00CD7D41 /* SceneDelegate.swift */,
 				C4EB82F3248AEB7B00CD7D41 /* Assets.xcassets */,
 				C4EB82F8248AEB7B00CD7D41 /* Info.plist */,
+				7D4777C824EEC3DB0028C8FF /* UIImage+.swift */,
 			);
 			path = "iOS-Vision-HandPose";
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 				C4EB82EB248AEB7B00CD7D41 /* AppDelegate.swift in Sources */,
 				7D95DBF424E0027B00C5BB52 /* rps_imageProcessed_flip_rotate.mlmodel in Sources */,
 				C4EB82ED248AEB7B00CD7D41 /* SceneDelegate.swift in Sources */,
+				7D4777C924EEC3DB0028C8FF /* UIImage+.swift in Sources */,
 				C475655D248AEBD900F111B8 /* CameraView.swift in Sources */,
 				C475655F248AEBD900F111B8 /* CameraViewController.swift in Sources */,
 			);
