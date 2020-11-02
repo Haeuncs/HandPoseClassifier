@@ -1,0 +1,402 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7DE70F37254FC7BC00E51EF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE70F36254FC7BC00E51EF8 /* AppDelegate.swift */; };
+		7DE70F39254FC7BC00E51EF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE70F38254FC7BC00E51EF8 /* SceneDelegate.swift */; };
+		7DE70F3B254FC7BC00E51EF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE70F3A254FC7BC00E51EF8 /* ViewController.swift */; };
+		7DE70F3E254FC7BC00E51EF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DE70F3C254FC7BC00E51EF8 /* Main.storyboard */; };
+		7DE70F40254FC7BD00E51EF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DE70F3F254FC7BD00E51EF8 /* Assets.xcassets */; };
+		7DE70F43254FC7BD00E51EF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DE70F41254FC7BD00E51EF8 /* LaunchScreen.storyboard */; };
+		7DE70F4C254FC7C500E51EF8 /* rps_imageProcessed_flip_rotate.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7DE70F4B254FC7C500E51EF8 /* rps_imageProcessed_flip_rotate.mlmodel */; };
+		7DE70F54254FCD5300E51EF8 /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE70F53254FCD5300E51EF8 /* UIImage+.swift */; };
+		7DE70F5D254FD08400E51EF8 /* AVCaptureSessionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE70F5C254FD08400E51EF8 /* AVCaptureSessionHelper.swift */; };
+		7DE70F63254FD66400E51EF8 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE70F62254FD66400E51EF8 /* CameraView.swift */; };
+		7DE70F66254FD74700E51EF8 /* HandPosePrediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE70F65254FD74700E51EF8 /* HandPosePrediction.swift */; };
+		7DE70F69254FD76000E51EF8 /* HandDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE70F68254FD76000E51EF8 /* HandDetection.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7DE70F33254FC7BC00E51EF8 /* HandPoseVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HandPoseVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DE70F36254FC7BC00E51EF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7DE70F38254FC7BC00E51EF8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7DE70F3A254FC7BC00E51EF8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7DE70F3D254FC7BC00E51EF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7DE70F3F254FC7BD00E51EF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7DE70F42254FC7BD00E51EF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7DE70F44254FC7BD00E51EF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DE70F4B254FC7C500E51EF8 /* rps_imageProcessed_flip_rotate.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = rps_imageProcessed_flip_rotate.mlmodel; sourceTree = "<group>"; };
+		7DE70F53254FCD5300E51EF8 /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
+		7DE70F5C254FD08400E51EF8 /* AVCaptureSessionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVCaptureSessionHelper.swift; sourceTree = "<group>"; };
+		7DE70F62254FD66400E51EF8 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		7DE70F65254FD74700E51EF8 /* HandPosePrediction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandPosePrediction.swift; sourceTree = "<group>"; };
+		7DE70F68254FD76000E51EF8 /* HandDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandDetection.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7DE70F30254FC7BC00E51EF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7DE70F2A254FC7BC00E51EF8 = {
+			isa = PBXGroup;
+			children = (
+				7DE70F35254FC7BC00E51EF8 /* HandPoseVision */,
+				7DE70F34254FC7BC00E51EF8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7DE70F34254FC7BC00E51EF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7DE70F33254FC7BC00E51EF8 /* HandPoseVision.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DE70F35254FC7BC00E51EF8 /* HandPoseVision */ = {
+			isa = PBXGroup;
+			children = (
+				7DE70F61254FD65800E51EF8 /* Camera */,
+				7DE70F5B254FD06300E51EF8 /* Helper */,
+				7DE70F59254FCFB900E51EF8 /* Vision */,
+				7DE70F52254FCD4A00E51EF8 /* Utills */,
+				7DE70F36254FC7BC00E51EF8 /* AppDelegate.swift */,
+				7DE70F38254FC7BC00E51EF8 /* SceneDelegate.swift */,
+				7DE70F3A254FC7BC00E51EF8 /* ViewController.swift */,
+				7DE70F3C254FC7BC00E51EF8 /* Main.storyboard */,
+				7DE70F3F254FC7BD00E51EF8 /* Assets.xcassets */,
+				7DE70F41254FC7BD00E51EF8 /* LaunchScreen.storyboard */,
+				7DE70F44254FC7BD00E51EF8 /* Info.plist */,
+			);
+			path = HandPoseVision;
+			sourceTree = "<group>";
+		};
+		7DE70F52254FCD4A00E51EF8 /* Utills */ = {
+			isa = PBXGroup;
+			children = (
+				7DE70F53254FCD5300E51EF8 /* UIImage+.swift */,
+			);
+			path = Utills;
+			sourceTree = "<group>";
+		};
+		7DE70F59254FCFB900E51EF8 /* Vision */ = {
+			isa = PBXGroup;
+			children = (
+				7DE70F4B254FC7C500E51EF8 /* rps_imageProcessed_flip_rotate.mlmodel */,
+				7DE70F65254FD74700E51EF8 /* HandPosePrediction.swift */,
+				7DE70F68254FD76000E51EF8 /* HandDetection.swift */,
+			);
+			path = Vision;
+			sourceTree = "<group>";
+		};
+		7DE70F5B254FD06300E51EF8 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				7DE70F5C254FD08400E51EF8 /* AVCaptureSessionHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		7DE70F61254FD65800E51EF8 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				7DE70F62254FD66400E51EF8 /* CameraView.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7DE70F32254FC7BC00E51EF8 /* HandPoseVision */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DE70F47254FC7BD00E51EF8 /* Build configuration list for PBXNativeTarget "HandPoseVision" */;
+			buildPhases = (
+				7DE70F2F254FC7BC00E51EF8 /* Sources */,
+				7DE70F30254FC7BC00E51EF8 /* Frameworks */,
+				7DE70F31254FC7BC00E51EF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HandPoseVision;
+			productName = HandPoseVision;
+			productReference = 7DE70F33254FC7BC00E51EF8 /* HandPoseVision.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7DE70F2B254FC7BC00E51EF8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					7DE70F32254FC7BC00E51EF8 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 7DE70F2E254FC7BC00E51EF8 /* Build configuration list for PBXProject "HandPoseVision" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7DE70F2A254FC7BC00E51EF8;
+			productRefGroup = 7DE70F34254FC7BC00E51EF8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7DE70F32254FC7BC00E51EF8 /* HandPoseVision */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7DE70F31254FC7BC00E51EF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DE70F43254FC7BD00E51EF8 /* LaunchScreen.storyboard in Resources */,
+				7DE70F40254FC7BD00E51EF8 /* Assets.xcassets in Resources */,
+				7DE70F3E254FC7BC00E51EF8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7DE70F2F254FC7BC00E51EF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DE70F3B254FC7BC00E51EF8 /* ViewController.swift in Sources */,
+				7DE70F69254FD76000E51EF8 /* HandDetection.swift in Sources */,
+				7DE70F5D254FD08400E51EF8 /* AVCaptureSessionHelper.swift in Sources */,
+				7DE70F4C254FC7C500E51EF8 /* rps_imageProcessed_flip_rotate.mlmodel in Sources */,
+				7DE70F54254FCD5300E51EF8 /* UIImage+.swift in Sources */,
+				7DE70F37254FC7BC00E51EF8 /* AppDelegate.swift in Sources */,
+				7DE70F39254FC7BC00E51EF8 /* SceneDelegate.swift in Sources */,
+				7DE70F66254FD74700E51EF8 /* HandPosePrediction.swift in Sources */,
+				7DE70F63254FD66400E51EF8 /* CameraView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7DE70F3C254FC7BC00E51EF8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7DE70F3D254FC7BC00E51EF8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7DE70F41254FC7BD00E51EF8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7DE70F42254FC7BD00E51EF8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7DE70F45254FC7BD00E51EF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7DE70F46254FC7BD00E51EF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7DE70F48254FC7BD00E51EF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L47YWQ7AFX;
+				INFOPLIST_FILE = HandPoseVision/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = HAEUN.HabdPoseVision;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7DE70F49254FC7BD00E51EF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L47YWQ7AFX;
+				INFOPLIST_FILE = HandPoseVision/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = HAEUN.HabdPoseVision;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7DE70F2E254FC7BC00E51EF8 /* Build configuration list for PBXProject "HandPoseVision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DE70F45254FC7BD00E51EF8 /* Debug */,
+				7DE70F46254FC7BD00E51EF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DE70F47254FC7BD00E51EF8 /* Build configuration list for PBXNativeTarget "HandPoseVision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DE70F48254FC7BD00E51EF8 /* Debug */,
+				7DE70F49254FC7BD00E51EF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7DE70F2B254FC7BC00E51EF8 /* Project object */;
+}
